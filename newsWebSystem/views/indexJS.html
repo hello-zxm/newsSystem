@@ -1,0 +1,17 @@
+<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+
+    window.onload = function (ev) {
+
+        $(".dels").click(function () {
+            if (!confirm("是否要删除？")) {
+                return false
+            }
+        });
+        $("#select").change(function () {
+            $("#formIndex").submit()
+        })
+
+    }
+
+</script>
