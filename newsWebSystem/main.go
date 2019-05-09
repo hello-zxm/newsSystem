@@ -31,7 +31,7 @@ func NextPage(page, count int) int {
 		return page + 1
 	}
 }
-
+//自增1
 func AddNum(a int) int {
 	a++
 	return a;
