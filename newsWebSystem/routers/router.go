@@ -24,13 +24,13 @@ func init() {
 		})
 
 	beego.Router("/", &controllers.MainController{})
-	//注册
+	//注册业务
 	beego.Router("/register", &controllers.UserController{}, "get:ShowRegister;post:Register")
-	//登录
+	//登录业务
 	beego.Router("/login", &controllers.UserController{}, "get:ShowLogin;post:Login")
 	//首页
 	beego.Router("/article/index", &controllers.ArticleController{}, "get,post:ShowIndex")
-	//添加文章
+	//添加文章处理
 	beego.Router("/article/addArticle", &controllers.ArticleController{}, "get:AddArticle;post:HandleAddArticle")
 	//显示文章详情
 	beego.Router("/article/content", &controllers.ArticleController{}, "get:ShowContent")
