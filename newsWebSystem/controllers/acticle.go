@@ -194,7 +194,7 @@ func (c *ArticleController) ShowContent() {
 	//的值   Distinct用来去重
 	_, err = o.QueryTable("User").Filter("Articles__Article__Id", id).Distinct().All(&users)
 	if err != nil {
-		beego.Info("0000000000000", err)
+		beego.Info("00000000000010", err)
 	}
 	c.Data["users"] = users
 
