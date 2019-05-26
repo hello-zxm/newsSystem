@@ -1,5 +1,5 @@
 # newsSystem
-go-web新闻管理后台
+go-web管理后台
 
 用户注册 登录
 
